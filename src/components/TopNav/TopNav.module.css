@@ -1,11 +1,18 @@
 .container {
+    display: flex;
+    justify-content: space-between;
     height: 65px;
     background-color: white;
     border-bottom: 2px solid #EAEAEA;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 0px 16px;
+}
+
+.rightBtnContainer{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    border-bottom: 1px solid sliver;
 }
 
 .roundBtn{
@@ -31,11 +38,5 @@
     /* 가운데 정렬 */
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.rightBtnContainer{
-    display: flex;
-    gap: 6px;
     align-items: center;
 }

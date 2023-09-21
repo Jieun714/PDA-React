@@ -7,8 +7,14 @@ const TopNav = () => {
         "https://open.shinhansec.com/phone/goM.jsp?p=OTUxMCYmJiZTJiY*&amp;v=2";
 
     const onClickShareBtn = () => {
-      // TODO: [미션] 현재 사이트 링크 클립보드 복사하고 알림창 띄우기
-        alert("https://open.shinhansec.com/phone/goM.jsp?p=OTUxMCYmJiZTJiY*&amp;v=2");
+        //T0D0: (미션] 현재 사이트 링크 클립보드 복사하고 "복사되었습니다" 알럿 띄우기
+        const currentUrl = window. document. location.href;
+        navigator.clipboard
+            .writeText (currentUrl)
+            .then(() => {
+                alert ("주소가 복사되었습니다. ") ;
+            })
+            .catch((err) => alert(" 실패했습니다."))
     };
 
     return (
