@@ -8,6 +8,7 @@ const TopNav = () => {
 
     const onClickShareBtn = () => {
       // TODO: [미션] 현재 사이트 링크 클립보드 복사하고 알림창 띄우기
+        alert("https://open.shinhansec.com/phone/goM.jsp?p=OTUxMCYmJiZTJiY*&amp;v=2");
     };
 
     return (
