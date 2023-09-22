@@ -7,29 +7,11 @@
     padding: 0px 16px;
 }
 
-.container2{
-    height: 65px;
-    border-bottom: 2px solid #EAEAEA;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.tab{
-    padding: 4vw;
-    font-size: 1.3rem;
-}
-
-.tab:hover{
-    border-bottom: 1px solid #0046FF;
-}
-
 .rightButtonContainer{
     display: flex;
     gap: 6px;
     align-items: center;
 }
-
 .roundButton{
     border-radius: 20px;
     background: linear-gradient(90deg, #0094FF 0%, #0046FF 114.29%);

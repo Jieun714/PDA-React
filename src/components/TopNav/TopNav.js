@@ -15,31 +15,21 @@ const TopNav = () => {
         alert ("주소가 복사되었습니다. ") ;
       })
       .catch((err) => alert(" 실패했습니다."))
-  };
+    };
 
   return (
-    <div>
-      <div className={styles.container}>
-        {/* 로고 */}
-        <img src={Logo} alt="logo" />
-        <div className={styles.rightButtonContainer}>
-          {/*앱 다운로드 버튼 */}
-          <a href={APP_DOWNLOAD_LINK} target="_blank">
-            <div className={styles.roundButton}>앱 다운로드</div>
-          </a>
+    <div className={styles.container}>
+      {/* 로고 */}
+      <img src={Logo} alt="logo" />
+      <div className={styles.rightButtonContainer}>
+        {/*앱 다운로드 버튼 */}
+        <a href={APP_DOWNLOAD_LINK} target="_blank">
+          <div className={styles.roundButton}>앱 다운로드</div>
+        </a>
 
-          {/* 공유 버튼 */}
-          <div className={styles.circleButton} onClick={onClickCopyButton}>
-            <img src={shareIcon} alt="share" />
-          </div>
-        </div>
-      </div>
-      <div className={styles.container2}>
-        <div className={styles.tab}>
-          국내주식
-        </div>
-        <div className={styles.tab}>
-          해외주식
+        {/* 공유 버튼 */}
+        <div className={styles.circleButton} onClick={onClickCopyButton}>
+          <img src={shareIcon} alt="share" />
         </div>
       </div>
     </div>
